@@ -5,30 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>Survey Form</title>
 </head>
 
 <body>
     <!-- CREATE A FUNCTIONAL(?) SURVEY FORM -->
-    <h1 id="title">Survey Form</h1>
-    <p id="description">A survey form</p>
+    <header>
+        <h1 id="title">Movie Tastes Survey Form</h1>
+        <p id="description">Help us get to know the movie tastes of people who visit this site</p>
+    </header>
 
-    <form id="survey-form">
-        <label id="name-label"><input id="name" placeholder="name" type="text">Name</label>
-        <label id="email-label"><input id="email" placeholder="E-mail" type="text">E-mail</label> 
-        <!-- USER STORY #6 -->
-        <label id="number-label"><input id="number" placeholder="number" type="number">Number</label>
-        <!-- USER STORY #8+9 -->
+    <div class="form-container">
+        <form id="survey-form">
+            <div>
+                <label id="name-label" for="name"><input id="name" placeholder="Enter your name here" type="text" required>Name</label>
+                <label id="email-label" for="email"><input id="email" placeholder="Enter your e-mail here" type="text" required>E-mail</label> 
+                <!-- USER STORY #6 -->
+                <label id="number-label" for="age"><input id="age" placeholder="Enter your age" type="number"min="13" max="99">Age</label>
+                <!-- USER STORY #8+9 -->
+            </div>
 
-        <!-- dropdown options -->
-        <label><input id="dropdown" type="range" min="" max="">Dropdown</label>
-        <!-- radio buttons field w/ name and value attr -->
-        <label><input id="name" type="radio" name="color">Name</label>
-        <!-- field of checkboxes w/ value attr -->
+            <div>
+                <!-- dropdown options -->
+                <label for="dropdown">Would you consider yourself to be an avid moviegoer?</label>
+                <select id="dropdown" name="" required>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                </select>
+            </div>
 
-        <!-- present text-area for additional comments -->
-        <button id="submit">SUBMIT</button>
+            <div>
+                <p>What do you think was the best era of moviemaking?</p>
+                <!-- radio buttons field w/ name and value attr -->
+                <label for="green"><input id="green" value="green" type="radio" name="color">Green</label>
+                <label for="lavander"><input id="lavander" value="lavander" type="radio" name="color">Lavander</label>
+                <label for="rose"><input id="rose" value="rose" type="radio" name="color">Rose</label>
+                <label for="cyan"><input id="cyan" value="cyan" type="radio" name="color">Cyan</label>
+                <label for="scarlet"><input id="scarlet" value="scarlet" type="radio" name="color">Scarlet</label>
+            </div>
 
-    </form>
+            <div>
+                <p>What are your favorite movie genres?</p>
+                <!-- field of checkboxes w/ value attr -->
+                <label for="sweet"><input id="sweet" value="sweet" type="checkbox" name="taste">Sweet</label>
+                <label for="sour"><input id="sour" value="sour" type="checkbox" name="taste">Sour</label>
+            </div>
+            
+            <!-- present text-area for additional comments -->
+            <button id="submit">SUBMIT</button>
+        </form>
+    </div>
+    
 </body>
 </html>
