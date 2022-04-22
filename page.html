@@ -27,32 +27,49 @@
 
             <div>
                 <!-- dropdown options -->
-                <label for="dropdown">Would you consider yourself to be an avid moviegoer?</label>
+                <label for="dropdown">Would you consider yourself to be an avid moviegoer or cinophile?</label>
                 <select id="dropdown" name="" required>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
+                    <option value="very-yes">Absolutely!</option>
+                    <option value="yes">Yes</option>
+                    <option value="meh">I watch movies for fun/option>
+                    <option value="no">Not really</option>
+                    <option value="very-no">Definitely not</option>
+                    <option value="definitely-no">I never watch movies</option>
                 </select>
-            </div>
-
-            <div>
-                <p>What do you think was the best era of moviemaking?</p>
-                <!-- radio buttons field w/ name and value attr -->
-                <label for="green"><input id="green" value="green" type="radio" name="color">Green</label>
-                <label for="lavander"><input id="lavander" value="lavander" type="radio" name="color">Lavander</label>
-                <label for="rose"><input id="rose" value="rose" type="radio" name="color">Rose</label>
-                <label for="cyan"><input id="cyan" value="cyan" type="radio" name="color">Cyan</label>
-                <label for="scarlet"><input id="scarlet" value="scarlet" type="radio" name="color">Scarlet</label>
             </div>
 
             <div>
                 <p>What are your favorite movie genres?</p>
                 <!-- field of checkboxes w/ value attr -->
-                <label for="sweet"><input id="sweet" value="sweet" type="checkbox" name="taste">Sweet</label>
-                <label for="sour"><input id="sour" value="sour" type="checkbox" name="taste">Sour</label>
+                <label for="sci-fi"><input id="sci-fi" value="sci-fi" type="checkbox" name="genre">Science Fiction</label>
+                <label for="fantasy"><input id="fantasy" value="fantasy" type="checkbox" name="genre">Fantasy</label>
+                <label for="mystery"><input id="mystery" value="mystery" type="checkbox" name="genre">Mystery</label>
+                <label for="horror"><input id="horror" value="horror" type="checkbox" name="genre">Horror</label>
+                <label for="action"><input id="action" value="action" type="checkbox" name="genre">Action/Adventure</label>
+                <label for="comedy"><input id="comedy" value="comedy" type="checkbox" name="genre">Comedy</label>
+                <label for="romance"><input id="romance" value="romance" type="checkbox" name="genre">Romance</label>
+                <label for="historical"><input id="historical" value="historical" type="checkbox" name="genre">Historical</label>
             </div>
-            
+
+            <div>
+                <p>What do you consider to be the best decade for film-making?</p>
+                <!-- radio buttons field w/ name and value attr -->
+                <label for="1960s"><input id="1960s" value="1960s" type="radio" name="color">1960s</label>
+                <label for="1970s"><input id="1970s" value="1970s" type="radio" name="color">1970s</label>
+                <label for="1980s"><input id="1980s" value="1980s" type="radio" name="color">1980s</label>
+                <label for="1990s"><input id="1990s" value="1990s" type="radio" name="color">1990s</label>
+                <label for="2000s"><input id="2000s" value="2000s" type="radio" name="color">2000s</label>
+                <label for="2010s"><input id="2010s" value="2010s" type="radio" name="color">2010s</label>
+                <label for="pre-1960s"><input id="pre-1950s" value="pre-1950s" type="radio" name="era">Before the 1950s</label>
+                <label for="neutral"><input id="neutral" value="neutral" type="radio" name="era">I think each decade has its own strengths and flaws</label>
+            </div>
+
             <!-- present text-area for additional comments -->
+            <div>
+                <p>Who are some of your favorite directors?</p>
+                <textarea id="fav-directors" name="directors" placeholder="Enter your response here..."></textarea>
+            </div>
+
             <button id="submit">SUBMIT</button>
         </form>
     </div>
